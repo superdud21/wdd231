@@ -1,0 +1,128 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1f3b5d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Navigation */
+.navigation {
+    background-color: #2a4d7d;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navigation ul {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+}
+
+.navigation ul li {
+    padding: 10px 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navigation a.active {
+    border-bottom: 2px solid yellow;
+}
+
+/* Responsive Navigation - Mobile Menu */
+#menuToggle {
+    display: block;
+    background-color: #2a4d7d;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#menuToggle:hover {
+    background-color: #1f3b5d;
+}
+
+/* Show menu when toggled */
+.navigation.active ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #1f3b5d;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Cards */
+#course-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.completed {
+    background-color: #c8e6c9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #1f3b5d;
+    color: white;
+    padding: 1rem;
+    margin-top: 20px;
+}

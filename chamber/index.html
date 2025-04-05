@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timbuktu Chamber of Commerce</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="images/logo.jpg" alt="Timbuktu Chamber Logo" class="logo-img" />
+        <div class="logo-text">
+          <h1>Timbuktu</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-container">
+          <button id="hamburger" aria-label="Toggle Menu">☰</button>
+          <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+          </ul>
+          <button id="theme-toggle">🌗</button>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="images/hero-image.webp" alt="Hero Image">
+      <a href="#" class="cta-button">Keynote Tickets</a>
+    </section>
+    <h2>Home</h2>
+    <section class="main-content">
+      <div class="events card">
+        <h3>Events</h3>
+        <p>Details about upcoming events will go here.</p>
+      </div>
+      <div class="weather card">
+        <h3>Current Weather</h3>
+        <div id="current-weather">
+
+        </div>
+      </div>
+      <div class="forecast card">
+        <h3>Weather Forecast</h3>
+        <ul id="forecast">
+
+        </ul>
+      </div>
+    </section>
+    <section class="spotlights">
+      <div class="business card" id="spotlight1"></div>
+      <div class="business card" id="spotlight2"></div>
+      <div class="business card" id="spotlight3"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-left">
+        <p><strong>Timbuktu Chamber of Commerce</strong></p>
+        <p>10 Timbuktu Way, Timbuktu, 18674</p>
+        <p>Email: info@timbuktucc.org<br>Phone: (223) 555-2300</p>
+      </div>
+      <div class="footer-center">
+        <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+      </div>
+      <div class="footer-right">
+        <p>WDD131 Class Project | Caleb Cameron</p>
+        <p>&copy; 2025 Timbuktu Chamber of Commerce</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("lastModified").textContent = document.lastModified;
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>  <script src="js/spotlight.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>

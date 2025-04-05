@@ -1,0 +1,56 @@
+[
+    {
+      "name": "Solar Ltd.",
+      "address": "12 Solar Dr, Timbuktu",
+      "phone": "223-555-0101",
+      "website": "https://solar.tmb",
+      "logo": "solar.jpg",
+      "membership": 3,
+      "tagline": "Harnessing the power of the sun."
+    },
+    {
+      "name": "Timbuktu Soda",
+      "address": "456 Coffee Lane, Timbuktu",
+      "phone": "223-555-0102",
+      "website": "https://timbuktusoda.tmb",
+      "logo": "soda-shop.jpg",
+      "membership": 2,
+      "tagline": "A good start to the day"
+    },
+    {
+      "name": "Timbuktu Rentals",
+      "address": "2 Jeep Ave, Timbuktu",
+      "phone": "223-555-0103",
+      "website": "https://timbukturentals.tmb",
+      "logo": "rental.jpg",
+      "membership": 1,
+      "tagline": "Explore the Land"
+    },
+    {
+      "name": "Timbuktu Books",
+      "address": "12 Book Dr, Timbuktu",
+      "phone": "223-555-0104",
+      "website": "https://timbuktubooks.tmb",
+      "logo": "books.jpg",
+      "membership": 3,
+      "tagline": "Where new stories begin."
+    },
+    {
+      "name": "Timbuktu Health",
+      "address": "78 Health Lane, Timbuktu",
+      "phone": "223-555-0105",
+      "website": "https://timbuktuhealth.tmb",
+      "logo": "health.jpg",
+      "membership": 2,
+      "tagline": "Gotta stay healthy."
+    },
+    {
+      "name": "Timmy's Grocery",
+      "address": "8 Grocery Ave, Timbuktu",
+      "phone": "223-555-0106",
+      "website": "https://timmysgrocery.tmb",
+      "logo": "timmys.jpg",
+      "membership": 1,
+      "tagline": "For all of your grocery needs."
+    }
+]

@@ -1,0 +1,32 @@
+/* Normalize.css: Standardize default styles across browsers */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, header, nav, main, section, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Remove default list styles */
+ul {
+    list-style: none;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Set up a basic box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Default button styles */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
