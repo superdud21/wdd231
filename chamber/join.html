@@ -13,114 +13,117 @@
   <meta property="og:url" content="https://superdud21.github.io/wdd231/chamber/join.html">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/lastmodified.js"></script>
 </head>
 <body>
-  <main>
     <header>
-      <div class="logo">
+        <div class="logo">
         <img src="images/logo.jpg" alt="Timbuktu Chamber Logo" class="logo-img">
         <div class="logo-text">
-          <h1>Timbuktu Chamber of Commerce</h1>
+            <h1>Timbuktu Chamber of Commerce</h1>
         </div>
-      </div>
-      <nav>
+        </div>
+        <nav>
         <div class="nav-container">
-          <button id="hamburger" aria-label="Toggle Menu">☰</button>
-          <ul class="nav-links">
+            <button id="hamburger" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
-          </ul>
-          <button id="theme-toggle">🌗</button>
+            </ul>
+            <button id="theme-toggle">🌗</button>
         </div>
-      </nav>
+        </nav>
     </header>
-    <section>
-      <h2>Join the Chamber</h2>
-    </section>
-    <section class="main-content form-section">
-      <form method="get" action="thankyou.html">
-        <label>
-          First Name:
-          <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
-        </label>
-        <label>
-          Last Name:
-          <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
-        </label>
-        <label>
-          Title:
-          <input type="text" name="title" title="Title in Organization" autocomplete="organization-title" pattern="[A-Za-z\\-\\s]{7,}" required>
-        </label>
-        <label>
-          Email:
-          <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com" required>
-        </label>
-        <label>
-          Mobile Phone:
-          <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
-        </label>
-        <label>
-          Business Name:
-          <input type="text" name="business" title="Business Name" autocomplete="organization" required>
-        </label>
-        <label>
-          Membership Level:
-          <select name="membership" required>
-            <option value="NP">NP Membership (Free)</option>
-            <option value="Bronze">Bronze</option>
-            <option value="Silver">Silver</option>
-            <option value="Gold">Gold</option>
-          </select>
-        </label>
-        <label>
-          Business Description:
-          <textarea name="description" title="Describe your organization"></textarea>
-        </label>
-        <input type="hidden" name="timestamp" id="timestamp">
-        <input type="submit" value="Submit Application">
-      </form>
-      <div class="membership-cards">
-        <div class="card fade-in">
-          <h3>NP Membership</h3>
-          <p>Nonprofit only</p>
-          <a href="#npModal">View Benefits</a>
+    <main>
+        <section>
+        <h2>Join the Chamber</h2>
+        </section>
+        <section class="main-content form-section">
+        <form method="get" action="thankyou.html">
+            <label>
+            First Name:
+            <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+            </label>
+            <label>
+            Last Name:
+            <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+            </label>
+            <label>
+            Title:
+            <input type="text" name="title" title="Title in Organization" autocomplete="organization-title" pattern="[A-Za-z\\-\\s]{7,}" required>
+            </label>
+            <label>
+            Email:
+            <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com" required>
+            </label>
+            <label>
+            Mobile Phone:
+            <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+            </label>
+            <label>
+            Business Name:
+            <input type="text" name="business" title="Business Name" autocomplete="organization" required>
+            </label>
+            <label>
+            Membership Level:
+            <select name="membership" required>
+                <option value="" disabled selected hidden>Select Membership Level</option>
+                <option value="NP">NP Membership (Free)</option>
+                <option value="Bronze">Bronze</option>
+                <option value="Silver">Silver</option>
+                <option value="Gold">Gold</option>
+            </select>
+            
+            </label>
+            <label>
+            Business Description:
+            <textarea name="description" title="Describe your organization"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Application">
+        </form>
+        <div class="membership-cards">
+            <div class="card fade-in">
+            <h3>NP Membership</h3>
+            <p>Nonprofit only</p>
+            <a href="#npmodal">View Benefits</a>
+            </div>
+            <div class="card fade-in">
+            <h3>Bronze</h3>
+            <a href="#bronzemodal">View Benefits</a>
+            </div>
+            <div class="card fade-in">
+            <h3>Silver</h3>
+            <a href="#silvermodal">View Benefits</a>
+            </div>
+            <div class="card fade-in">
+            <h3>Gold</h3>
+            <a href="#goldmodal">View Benefits</a>
+            </div>
         </div>
-        <div class="card fade-in">
-          <h3>Bronze</h3>
-          <a href="#bronzeModal">View Benefits</a>
-        </div>
-        <div class="card fade-in">
-          <h3>Silver</h3>
-          <a href="#silverModal">View Benefits</a>
-        </div>
-        <div class="card fade-in">
-          <h3>Gold</h3>
-          <a href="#goldModal">View Benefits</a>
-        </div>
-      </div>
-    </section>
-    <dialog id="npModal">
-      <h4>NP Membership Benefits</h4>
-      <p>Free for nonprofit organizations. Includes event invites and limited promotions.</p>
-      <button onclick="document.getElementById('npModal').close()">Close</button>
-    </dialog>
-    <dialog id="bronzeModal">
-      <h4>Bronze Membership Benefits</h4>
-      <p>Basic advertising, event invites, and training workshops.</p>
-      <button onclick="document.getElementById('bronzeModal').close()">Close</button>
-    </dialog>
-    <dialog id="silverModal">
-      <h4>Silver Membership Benefits</h4>
-      <p>Includes Bronze benefits plus spotlight ads and 10% off events.</p>
-      <button onclick="document.getElementById('silverModal').close()">Close</button>
-    </dialog>
-    <dialog id="goldModal">
-      <h4>Gold Membership Benefits</h4>
-      <p>All Silver perks plus sponsor banners and 25% off all events.</p>
-      <button onclick="document.getElementById('goldModal').close()">Close</button>
-    </dialog>
+        </section>
+        <dialog id="npmodal">
+        <h4>NP Membership Benefits</h4>
+        <p>Free for nonprofit organizations. Includes event invites and limited promotions.</p>
+        <button onclick="document.getElementById('npModal').close()">Close</button>
+        </dialog>
+        <dialog id="bronzeModal">
+        <h4>Bronze Membership Benefits</h4>
+        <p>Basic advertising, event invites, and training workshops.</p>
+        <button onclick="document.getElementById('bronzeModal').close()">Close</button>
+        </dialog>
+        <dialog id="silverModal">
+        <h4>Silver Membership Benefits</h4>
+        <p>Includes Bronze benefits plus spotlight ads and 10% off events.</p>
+        <button onclick="document.getElementById('silverModal').close()">Close</button>
+        </dialog>
+        <dialog id="goldModal">
+        <h4>Gold Membership Benefits</h4>
+        <p>All Silver perks plus sponsor banners and 25% off all events.</p>
+        <button onclick="document.getElementById('goldModal').close()">Close</button>
+        </dialog>
   </main>
   <footer>
     <div class="footer-grid">
@@ -141,23 +144,5 @@
       </div>
     </div>
   </footer>
-  <script>
-    document.getElementById("lastModified").textContent = document.lastModified;
-    document.getElementById("timestamp").value = new Date().toISOString();
-
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.querySelector(".nav-links");
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("open");
-    });
-
-    document.querySelectorAll('.card a').forEach(link => {
-      link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const modal = document.querySelector(this.getAttribute('href'));
-        if (modal) modal.showModal();
-      });
-    });
-  </script>
 </body>
 </html>
