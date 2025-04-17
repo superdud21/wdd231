@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Caleb Cameron | W06 Project Site - Amateur Radio">
+  <meta name="author" content="Caleb Cameron">
+  <title>Rivertown Amateur Radio Club</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+        <div class="logo">📡</div>
+        <h1 class="site-title">Rivertown Amateur Radio Club</h1>
+    </div>
+    <nav class="nav">
+        <button id="hamburger" aria-label="Menu Toggle">☰</button>
+        <div class="nav-dropdown" id="navDropdown">
+            <button class="close-btn" id="closeBtn" aria-label="Close Menu">✕</button>
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="join.html">Join</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+  <main class="main-wrapper">
+    <div class="hero-wrapper">
+        <div class="left-column">
+          <section class="hero">
+            <img src="images/radio.jpg" alt="Club in action" loading="lazy" />
+            <button class="cta">Join the Club</button>
+          </section>
+          <section class="newsletter">
+            <h2>Newsletter Topics</h2>
+            <p>Stay in the loop with what’s happening at Rivertown ARC! Here’s what’s coming soon:</p>
+            <ul>
+            <li>
+                <strong>Field Day 2025 Planning</strong><br>
+                Join us as we prepare for this year’s Field Day! We’ll discuss logistics, gear checklists, location setup, and emergency preparedness tips.
+            </li>
+            <li>
+                <strong>Digital Modes 101</strong><br>
+                Curious about FT8, PSK31, or JS8Call? This primer will walk you through getting started with digital modes — no intimidating setups, just clean signals.
+            </li>
+            <li>
+                <strong>Emergency Communications Training</strong><br>
+                Learn how our club coordinates with local CERT and ARES groups. We'll cover go-bag essentials, net protocols, and simulated drill scenarios.
+            </li>
+            <li>
+                <strong>Member Spotlights</strong><br>
+                Get to know your fellow hams! We’re highlighting one operator each month — their favorite rigs, QSL cards, and how they got into the hobby.
+            </li>
+            </ul>
+          </section>
+        </div>
+        <aside class="sidebar">
+          <div class="weather">
+            <h3>Current Weather</h3>
+            <div id="current-weather"></div>
+            <ul id="forecast"></ul>
+          </div>
+          <div class="solar">
+            <h3>Solar Conditions</h3>
+            <div style="text-align: center;">
+              <a href="https://www.hamqsl.com/solar.html">
+                <img src="https://www.hamqsl.com/solarn0nbh.php" alt="Solar-Terrestrial Data">
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Rivertown Amateur Radio Club | <a href="references.html">References</a></p>
+    <p>You’ve visited this site <span id="visitCount"></span> times.</p>
+  </footer>
+</body>
+</html>

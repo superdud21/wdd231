@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Caleb Cameron | W05 Project Site - Upcoming Events">
+  <meta name="author" content="Caleb Cameron">
+  <title>Events | Rivertown ARC</title>
+  <link rel="stylesheet" href="styles/events.css" />
+  <script src="scripts/events.js" defer></script>
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+        <div class="logo">📡</div>
+        <h1 class="site-title">Rivertown Amateur Radio Club</h1>
+    </div>
+    <nav class="nav">
+        <button id="hamburger" aria-label="Menu Toggle">☰</button>
+        <div class="nav-dropdown" id="navDropdown">
+            <button class="close-btn" id="closeBtn" aria-label="Close Menu">✕</button>
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="join.html">Join</a></li>
+            </ul>
+        </div>
+        </nav>
+  </header>
+  <main class="main-wrapper">
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <div id="events-container" class="events-list">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Rivertown Amateur Radio Club</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Caleb Cameron | W05 Project Site Join Form">
+  <meta name="author" content="Caleb Cameron">
+  <title>Join the Club | Rivertown ARC</title>
+  <link rel="stylesheet" href="styles/join.css" />
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+        <div class="logo">📡</div>
+        <h1 class="site-title">Rivertown Amateur Radio Club</h1>
+    </div>
+    <nav class="nav">
+        <button id="hamburger" aria-label="Menu Toggle">☰</button>
+        <div class="nav-dropdown" id="navDropdown">
+            <button class="close-btn" id="closeBtn" aria-label="Close Menu">✕</button>
+            <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="join.html">Join</a></li>
+            </ul>
+        </div>
+        </nav>
+  </header>
+  <main>
+    <h1>Join Rivertown ARC</h1>
+    <form method="get" action="confirmation.html">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="callsign">Callsign (if licensed): <span class="optional">(Optional)</span></label>
+      <input type="text" id="callsign" name="callsign" />
+      <label for="licenseLevel">License Level:</label>
+      <select id="licenseLevel" name="licenseLevel" required>
+        <option value="" disabled selected>Select your license level...</option>
+        <option value="none">Not Licensed Yet</option>
+        <option value="technician">Technician</option>
+        <option value="general">General</option>
+        <option value="extra">Amateur Extra</option>
+      </select>
+      <fieldset>
+        <legend>What are you interested in?</legend>
+        <label><input type="checkbox" name="interests" value="nets"> Local Nets</label>
+        <label><input type="checkbox" name="interests" value="emcomm"> Emergency Communications</label>
+        <label><input type="checkbox" name="interests" value="dx"> DXing / Long Distance</label>
+        <label><input type="checkbox" name="interests" value="digital"> Digital Modes (FT8, etc)</label>
+        <label><input type="checkbox" name="interests" value="learning"> Learning & Mentorship</label>
+      </fieldset>
+      <label for="whyJoin">Tell us why you're joining:</label>
+      <textarea id="whyJoin" name="whyJoin" rows="4" placeholder="What got you interested in amateur radio?"></textarea>
+      <input type="submit" value="Submit Application" />
+    </form>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> Rivertown Amateur Radio Club</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

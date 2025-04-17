@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Caleb Cameron | W05 Project Site Join Form Confirmation">
+  <meta name="author" content="Caleb Cameron">
+  <title>Review Submitted | Rivertown ARC</title>
+  <link rel="stylesheet" href="styles/confirmation.css" />
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <div class="logo">📡</div>
+      <h1 class="site-title">Rivertown Amateur Radio Club</h1>
+    </div>
+    <nav class="nav">
+      <button id="hamburger" aria-label="Menu Toggle">☰</button>
+      <div class="nav-dropdown" id="navDropdown">
+        <button class="close-btn" id="closeBtn" aria-label="Close Menu">✕</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Thank You!</h2>
+      <p>Your submission has been received successfully.</p>
+      <p>We’ll be in touch soon — and we’re glad to have you on board!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Rivertown Amateur Radio Club | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
