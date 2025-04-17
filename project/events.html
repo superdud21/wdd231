@@ -3,43 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Caleb Cameron | W05 Project Site - Upcoming Events">
+  <meta name="description" content="WDD 231 – Dynamic Web Fundamentals | Caleb Cameron | W06 Project Site - Amateur Radio - Events Page">
   <meta name="author" content="Caleb Cameron">
+  <meta property="og:title" content="Rivertown Amateur Radio Club" />
+  <meta property="og:description" content="Join your local amateur radio community for training, events, and emergency comms." />
+  <meta property="og:image" content="https://superdud21.github.io/wdd231/project/images/favicon.png" />
+  <meta property="og:url" content="https://superdud21.github.io/wdd231/project/index.html" />
   <title>Events | Rivertown ARC</title>
   <link rel="stylesheet" href="styles/events.css" />
-  <script src="scripts/events.js" defer></script>
-  <script src="scripts/main.js" defer></script>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <script type="module" src="scripts/events-page.js" defer></script>
 </head>
 <body>
   <header>
     <div class="header-left">
-        <div class="logo">📡</div>
-        <h1 class="site-title">Rivertown Amateur Radio Club</h1>
+      <div class="logo">📡</div>
+      <h1 class="site-title">Rivertown Amateur Radio Club</h1>
     </div>
     <nav class="nav">
-        <button id="hamburger" aria-label="Menu Toggle">☰</button>
-        <div class="nav-dropdown" id="navDropdown">
-            <button class="close-btn" id="closeBtn" aria-label="Close Menu">✕</button>
-            <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="join.html">Join</a></li>
-            </ul>
-        </div>
-        </nav>
+      <button id="hamburger" aria-label="Menu Toggle">☰</button>
+      <div class="nav-dropdown" id="navDropdown">
+        <button class="close-btn" id="closeBtn" aria-label="Close Menu">✕</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="main-wrapper">
-    <section class="events">
-      <h2>Upcoming Events</h2>
-      <div id="events-container" class="events-list">
-      </div>
-    </section>
+    <h2>Upcoming Events</h2>
+    <div id="events-container"></div>
   </main>
+  <div id="event-modal" class="modal">
+    <div class="modal-content"></div>
+  </div>
   <footer>
-    <p>&copy; <span id="year"></span> Rivertown Amateur Radio Club</p>
+    <p>&copy; 2025 Rivertown ARC | <a href="attributions.html">Attributions</a></p>
   </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
