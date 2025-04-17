@@ -1,0 +1,87 @@
+.discover-layout {
+    display: grid;
+    grid-template-areas:
+      "sidebar"
+      "cards";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  #sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .grid {
+    grid-area: cards;
+    display: grid;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+    gap: 1rem;
+  }
+  
+  @media (min-width: 641px) {
+    .discover-layout {
+      grid-template-areas:
+        "sidebar cards";
+      grid-template-columns: 300px 1fr;
+    }
+  
+    .grid {
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8";
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .grid {
+      grid-template-areas:
+        "card1 card2 card3 card4"
+        "card5 card6 card7 card8";
+    }
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card figure {
+    margin: 0;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .card button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  @media (min-width: 641px) {
+    .card img:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+  }
+  

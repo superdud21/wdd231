@@ -1,0 +1,59 @@
+[
+    {
+      "title": "Riverwalk Park",
+      "img": "images/park.webp",
+      "address": "123 Main St, Rivertown, USA",
+      "description": "A scenic park along the river with trails, picnic areas, and kayaking.",
+      "link": "#"
+    },
+    {
+      "title": "Local Farmers Market",
+      "img": "images/market.webp",
+      "address": "456 Market Lane, Rivertown, USA",
+      "description": "Open every Saturday, supporting local growers and artisans.",
+      "link": "#"
+    },
+    {
+      "title": "Rivertown Historical Museum",
+      "img": "images/museum.webp",
+      "address": "789 Heritage Dr, Rivertown, USA",
+      "description": "Discover the rich history of Rivertown from its founding to modern times.",
+      "link": "#"
+    },
+    {
+      "title": "Artisan Cheese House",
+      "img": "images/artisan.webp",
+      "address": "101 Brew St, Rivertown, USA",
+      "description": "A cozy spot for handcrafted cheese and other snacks.",
+      "link": "#"
+    },
+    {
+      "title": "Eagle Bluff Overlook",
+      "img": "images/overlook.webp",
+      "address": "102 Scenic Way, Rivertown, USA",
+      "description": "Panoramic views of the valley below—perfect for sunrise hikes and photos.",
+      "link": "#"
+    },
+    {
+      "title": "Rivertown Public Library",
+      "img": "images/library.webp",
+      "address": "200 Knowledge Blvd, Rivertown, USA",
+      "description": "Modern library with free events, digital resources, and children's activities.",
+      "link": "#"
+    },
+    {
+      "title": "Harmony Amphitheater",
+      "img": "images/amp.webp",
+      "address": "300 Harmony Ln, Rivertown, USA",
+      "description": "Outdoor venue hosting summer concerts, plays, and community gatherings.",
+      "link": "#"
+    },
+    {
+      "title": "Willow Springs Nature Center",
+      "img": "images/nature.webp",
+      "address": "400 Willow Way, Rivertown, USA",
+      "description": "Educational center with trails, exhibits, and guided tours of local wildlife.",
+      "link": "#"
+    }
+  ]
+  
