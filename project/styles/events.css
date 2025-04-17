@@ -110,7 +110,10 @@ body {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1.5rem;
+    min-height: 80vh;
+    flex: 1;
   }
+  
   
   .events h2 {
     text-align: center;
